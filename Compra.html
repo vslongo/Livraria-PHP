@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/05f770ec8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-fundo text-light">
+    <header class="bg-principal">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div style="width: 60px;" class="me-3">
+                    <a class="" href="Home.html"><img src="img/logo_1.png" alt="" class="w-100"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex mx-2">
+                        <input class="form-control rounded-0 rounded-start" style="width: 400px;" type="search"
+                            placeholder="O que voce deseja?" aria-label="Search">
+                        <button class="btn btn-outline-light rounded-0 rounded-end" type="submit"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-auto ms-4">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Somos.html">Sobre nos</a>
+                        </li>
+                    </ul>
+
+                    <a href="Carrinho.html">
+                        <button type="button" class="btn d-block btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </a>
+
+                    <a href="Login.html">
+                        <button type="button" class="btn d-block btn-outline-light mx-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="far fa-user"></i>
+                        </button>
+                    </a>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-secundaria">
+        <nav id="navbar" class="navbar navbar-light mx-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link text-light p-0" href="#scrollspyNov">Compra</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1 class="m-0">Estamos quase lá!</h1>
+            <hr>
+            <div class="p-3">
+                <div class="row g-2">
+                    <div class="col-8 bg-principal rounded-start">
+                        <ul class="list-group">
+                            <li class="list-group-item text-light bg-principal border-0">
+                                <h3 class="mb-2">Seu pedido</h3>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <a class="" href="Produto.html"><img src="img/PaiRico.jpg" alt=""
+                                                class="w-100 img-fluid"></a>
+                                    </div>
+                                    <div class="col-5 align-self-center">
+                                        <h4>
+                                            <h3 class="text-light">Pai rico, Pai Pobre</h3>
+                                            <p>Kiyosaki, Robert T-<i>Alta Books</i></p>
+                                        </h4>
+                                    </div>
+                                    <div class="col-3 align-self-center">
+                                        <div class="input-group">
+                                            <input type="number" class="form-control text-center" disabled value="1">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 align-self-center">
+                                        <p>Valor Item: R$120,00</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="list-group-item py-3 text-light bg-principal border-0">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <a class="" href="Produto.html"><img src="img/PaiRico.jpg" alt=""
+                                                class="w-100 img-fluid"></a>
+                                    </div>
+                                    <div class="col-5 align-self-center">
+                                        <h4>
+                                            <h3 class="text-light">Pai rico, Pai Pobre</h3>
+                                            <p>Kiyosaki, Robert T-<i>Alta Books</i></p>
+                                        </h4>
+                                    </div>
+                                    <div class="col-3 align-self-center">
+                                        <div class="input-group">
+                                            <input type="number" class="form-control text-center" disabled value="1">
+                                        </div>
+                                    </div>
+                                    <div class="col-2 align-self-center">
+                                        <p>Valor Item: R$120,00</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 bg-principal rounded-end">
+                        <h4 class="text-light mt-3">Total</h4>
+                        <div class="me-3">
+                            <table class="table text-light">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Produtos</th>
+                                        <td scope="col">R$240,00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Frete</th>
+                                        <td scope="col">R$20,00</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="col">Total</th>
+                                        <td scope="col">R$260,00</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="p-3">
+                <div class="row justify-content-center bg-principal rounded-3">
+                    <div class="col-6">
+                        <div class="Form-Cadastro bg-principal text-light">
+                            <form action="" class="row mx-2">
+                                <label for="id_contato" class="form-label fs-4">Endereço:</label>
+                                <div class="col-6 mb-2">
+                                    <i class="fas fa-globe-americas"></i>
+                                    <label for="id_estado" class="form-label">Estado:</label>
+                                    <input list="estados" name="estado" id="id_estado" class="form-control">
+                                    <datalist id="estados">
+                                        <option value="Acre">
+                                        <option value="Alagoas">
+                                        <option value="Amapá">
+                                        <option value="Amazonas">
+                                        <option value="Bahia">
+                                        <option value="Ceará">
+                                        <option value="Distrito Federal">
+                                        <option value="Espírito Santo">
+                                        <option value="Goiás">
+                                        <option value="Maranhão">
+                                        <option value="Mato Grosso">
+                                        <option value="Mato Grosso do Sul">
+                                        <option value="Minas Gerais">
+                                        <option value="Pará">
+                                        <option value="Paraiba">
+                                        <option value="Pernambuco">
+                                        <option value="Piauí">
+                                        <option value="Rio de Janeiro">
+                                        <option value="Rio Grande do Norte">
+                                        <option value="Rio Grande do Sul">
+                                        <option value="Rondônia">
+                                        <option value="Roraima">
+                                        <option value="Santa Catarina">
+                                        <option value="São Paulo">
+                                        <option value="Sergipe">
+                                        <option value="Tocantins">
+                                    </datalist>
+                                </div>
+
+                                <div class="col-6">
+                                    <i class="far fa-address-card"></i>
+                                    <label for="id_nome" class="form-label">CEP:</label>
+                                    <input type="text" name="nome" id="id_nome" placeholder="000.000.000-00" required
+                                        class="form-control">
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <i class="far fa-address-card"></i>
+                                    <label for="id_nome" class="form-label">Endereço:</label>
+                                    <input type="text" name="nome" id="id_nome"
+                                        placeholder="Cidade, Bairro, rua, numero" required class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <form class="row">
+                            <label for="id_contato" class="form-label fs-4">Cartão:</label>
+
+                            <div class="col-12 mb-2">
+                                <i class="far fa-address-card"></i>
+                                <label for="id_nome" class="form-label">Numero de cartão:</label>
+                                <input type="text" name="nome" id="id_nome" placeholder="XXX-XXX-XXX-XXX" required
+                                    class="form-control">
+                            </div>
+
+                            <div class="col-6 mb-2">
+                                <i class="far fa-address-card"></i>
+                                <label for="id_nome" class="form-label">Validade:</label>
+                                <input type="text" name="nome" id="id_nome" placeholder="01/2021" required
+                                    class="form-control">
+                            </div>
+
+                            <div class="col-6">
+                                <i class="far fa-address-card"></i>
+                                <label for="id_nome" class="form-label">Codigo:</label>
+                                <input type="text" name="nome" id="id_nome" placeholder="000" required
+                                    class="form-control">
+                            </div>
+
+                            <div class="col-12">
+                                <i class="far fa-address-card"></i>
+                                <label for="id_nome" class="form-label">Nome do Titular:</label>
+                                <input type="text" name="nome" id="id_nome" placeholder="Thiago Trzcinski" required
+                                    class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12">
+                        <div class="my-3 d-flex justify-content-center">
+                            <a href="#" class="text-decoration-none">
+                                <button type="submit" class="btn d-block btn-outline-light" style="font-size: 15px;"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    FINALIZAR A COMPRA
+                                </button>
+                            </a>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">                                    
+                                        <div class="modal-bod fs-4 p-3 bg-principal">
+                                            Sua compra foi finalizada com sucesso!
+                                            <i class="ms-1 far fa-check-circle"></i>
+                                        </div>
+                                        <div class="modal-footer border-0 bg-principal">
+                                            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Ok</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="text-center text-light bg-principal mt-3 fixed-b">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                    href="https://www.facebook.com/erick.scurpadilha" role="button" data-mdb-ripple-color="dark"
+                    target=”_blank”>
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://twitter.com/ScurErick"
+                    role="button" data-mdb-ripple-color="dark" target=”_blank”>
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/erickscur/"
+                    role="button" data-mdb-ripple-color="dark" target=”_blank”>
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                    href="https://www.linkedin.com/in/erick-scur-1044a5191/" role="button" data-mdb-ripple-color="dark"
+                    target=”_blank”>
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/ErickScur"
+                    role="button" data-mdb-ripple-color="dark" target=”_blank”>
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-light p-3 bg-secundaria">
+            © 2021 Copyright
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+<script src="teste.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

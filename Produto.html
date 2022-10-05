@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/05f770ec8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-fundo text-light">
+    <header class="bg-principal">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div style="width: 60px;" class="me-3">
+                    <a class="" href="Home.html"><img src="img/logo_1.png" alt="" class="w-100"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex mx-2">
+                        <input class="form-control rounded-0 rounded-start" style="width: 400px;" type="search"
+                            placeholder="O que voce deseja?" aria-label="Search">
+                        <button class="btn btn-outline-light rounded-0 rounded-end" type="submit"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-auto ms-4">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Somos.html">Sobre nos</a>
+                        </li>
+                    </ul>
+
+                    <a href="Carrinho.html">
+                        <button type="button" class="btn d-block btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </a>
+
+                    <a href="Login.html">
+                        <button type="button" class="btn d-block btn-outline-light mx-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="far fa-user"></i>
+                        </button>
+                    </a>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-secundaria">
+        <nav id="navbar" class="navbar navbar-light mx-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link text-light p-0" href="#">Produto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="flex-fill mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="img/PaiRico.jpg" id="imgProduto">
+                </div>
+                <div class="col-7">
+                    <div class="d-inline-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <h1 style="width: 350px;" class="float-start">Pai Rico, Pai Pobre</h1>
+                            <a href="#" class="float-start">
+                                <button type="button" class="btn d-block btn-outline-light" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div>
+                            <h5>Kiyosaki, Robert T-<i>Alta Books</h5>
+                            <h3>R$120,00</h3>
+                        </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="d-inline-flex align-items-end">
+                            <div class="me-2">
+                                <a href="Carrinho.html" class="text-decoration-none btn d-block btn-outline-light" style="width: 200px;">
+                                    <i class="fas fa-shopping-cart me-2"></i>COMPRAR
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <label for="id_frete">Calcular frete:</label>
+                                <form class="d-flex">
+                                    <input class="form-control rounded-0 rounded-start" style="width: 200px;" type="search"
+                                        placeholder="Qual seu CEP?" aria-label="Search">
+                                    <button class="btn btn-outline-light rounded-0 rounded-end" type="submit"><i
+                                            class="fas fa-search"></i></button>
+                                </form>    
+                            </div>
+                            
+                        </div>
+
+                       
+
+                        <!--      <h1>Pai Rico, Pai Pobre</h1>
+                    <a href="#">
+                        <button type="button" class="btn d-block btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    </a>                    
+                    <h5>Kiyosaki, Robert T-<i>Alta Books</h3>
+                    <h3>R$120,00</h3> 
+                    
+                    <a href="Carrinho.html" class="text-decoration-none">
+                        <button type="button" class="btn d-block btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="far fa-heart"></i>COMPRAR
+                    </button>
+                    </a> -->
+                    </div>
+                    <div class="col-7 mt-3">
+                        <table class="table text-light">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Codigo</th>
+                                    <td scope="col">132341894</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Título Original</th>
+                                    <td scope="col">Rich Dad Poor Dad</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="col">Editora</th>
+                                    <td scope="col">Alta Books</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="col">Ano de publicação</th>
+                                    <td scope="col">2017</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="col">Páginas</th>
+                                    <td scope="col">336</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="col">Autor</th>
+                                    <td scope="col">Robert T. Kiyosaki</td>
+                                </tr>
+
+                            </thead>
+                        </table>
+                    </div>
+                    
+                </div>
+
+                <div class="mt-4">
+                    <h1>Descrição</h1>
+                    <hr>
+                    <p>
+                        Celebrando 20 anos como o livro n° 1 em finanças pessoais. A escola prepara as crianças para
+                        o
+                        mundo real? Essa é a primeira pergunta com a qual o leitor se depara neste livro. O recado é
+                        ousado e direto: boa formação e notas altas não bastam para assegurar o sucesso de alguém. O
+                        mundo mudou; a maioria dos jovens tem cartão de crédito, antes mesmo de concluir os estudos,
+                        e
+                        nunca teve aula sobre dinheiro, investimentos, juros etc. Ou seja, eles vão para a escola,
+                        mas
+                        continuam financeiramente improficientes, despreparados para enfrentar um mundo que valoriza
+                        mais as despesas do que a poupança. Para o autor, o conselho mais perigoso que se pode dar a
+                        um
+                        jovem nos dias de hoje é: “Vá para a escola, tire notas altas e depoisprocure um trabalho
+                        seguro.” O fato é que agora as regras são outras, e não existe mais emprego garantido para
+                        ninguém. Pai Rico, Pai Pobre demonstra que a questão não é ser empregado ou empregador, mas
+                        ter
+                        o controle do próprio destino ou delegá-lo a alguém. É essa a tese de Robert Kiyosaki neste
+                        livro substancial e visionário. Para ele, a formação proporcionada pelo sistema educacional
+                        não
+                        prepara os jovens para o mundo que encontrarão depois de formados. E como os pais podem
+                        ensinar
+                        aos filhos o que a escola relega?
+                    </p>
+                </div>
+            </div>
+    </main>
+
+    <footer class="text-center text-light bg-principal mt-5" id="scrollspyFot">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-google"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-light p-3 bg-secundaria">
+            © 2021 Copyright
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+<script src="teste.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</html>
